@@ -30,7 +30,7 @@ function Header() {
       </a>
     </div>
 
-    <div id="navbarBasicExample" className="navbar-menu">
+    <div id="navbarBasicExample" className="navbar-menu ">
       <div className="navbar-start">
         <Link to="/about" className="navbar-item">
           About

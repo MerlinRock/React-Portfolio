@@ -1,12 +1,17 @@
 import React from "react";
-import resume from "../images/Merlin Rock Resume - Google Docs.pdf"
+import resumePNG from "../images/MerlinRockResume.png"
+import resumePDF from "../images/MerlinRockResume.pdf"
+import { Link } from "react-router-dom";
+import './Resume.css';
 
 
 function Resume() {
     return (
-        <div className="hero-body">
-            <h1>My Resume</h1>
-          <img src={resume} className="resume" />
+        <div className="hero-body resume">
+            <a href={resumePDF} download>Download Merlin's Resume</a>
+            <hr></hr>
+
+            <img src={resumePNG} />
         </div>
     )
 }
