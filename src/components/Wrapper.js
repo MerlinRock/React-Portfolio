@@ -2,9 +2,9 @@ import React from "react";
 // import './Body.css';
 
 
-function Wrapper() {
+function Wrapper(props) {
     return (
-        <div className="hero">
+        <div className="hero"  {...props}>
             
         </div>
     )

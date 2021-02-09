@@ -1,6 +1,8 @@
 import React from "react";
 import './Header.css';
-import { Section } from 'react-bulma-components'
+import { Section } from 'react-bulma-components';
+import { Link, useLocation } from "react-router-dom";
+
 
 // const styles = {
 //     hr: {
@@ -12,44 +14,44 @@ import { Section } from 'react-bulma-components'
 
 
 function Header() {
-    return (
-        <div>
-          <nav className="navbar" role="navigation" aria-label="main navigation">
-            <Section className="navbar-brand">
-              
+  const location = useLocation()
+  return (
+<div className="hero-head">
+  <nav className="navbar" role="navigation" aria-label="main navigation">
+    <div className="navbar-brand">
+      <Link className="navbar-item" href="https://bulma.io">
+        <h1>Merlin Rock</h1>
+      </Link>
 
-              <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-              </a>
-            </Section>
+      <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
 
-            <Section id="navbarBasicExample" className="navbar-menu">
-              <Section className="navbar-start">
-                <a className="navbar-item" href="index.html">
-                  Home/About Me
-                </a>
+    <div id="navbarBasicExample" className="navbar-menu">
+      <div className="navbar-start">
+        <Link className="navbar-item">
+          About
+        </Link>
 
-                <a className="navbar-item" href="portfolio.html">
-                  Portfolio
-                </a>
+        <Link className="navbar-item">
+          Portfolio
+        </Link>
 
-                <a className="navbar-item" href="contact.html">
-                  Contact
-                </a>
+        <Link className="navbar-item">
+          Contact
+        </Link>
 
-                <a className="navbar-item"
-                  href="https://docs.google.com/document/d/18z3xuPjWtQcAxq-XY8BxMsd8359yB9sT--OMthnhTt8/edit">
-                  My Resume
-                </a>
-              </Section>
-            </Section>
-          </nav>
-        </div>
-      
-      
-    )
-}
+        <Link className="navbar-item">
+          Resume
+        </Link>
+      </div>
+    </div>
+  </nav>
+</div>
+  )
+};
 
-export default Header;
+  export default Header;
