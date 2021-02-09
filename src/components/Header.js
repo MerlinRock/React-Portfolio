@@ -1,6 +1,6 @@
 import React from "react";
-import logo from "../images/Rok Computing Logo.png"
 import './Header.css';
+import { Section } from 'react-bulma-components'
 
 // const styles = {
 //     hr: {
@@ -16,9 +16,7 @@ function Header() {
         <div>
           <nav className="navbar" role="navigation" aria-label="main navigation">
             <Section className="navbar-brand">
-              <a className="">
-                <img src="./Assets/images/Rok Computing Logo.png" className="logo" />
-              </a>
+              
 
               <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
                 <span aria-hidden="true"></span>
