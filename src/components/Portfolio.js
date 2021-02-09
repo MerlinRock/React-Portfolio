@@ -33,8 +33,8 @@ function Portfolio() {
           <img src={HappyTrailsImg} alt="Image of happy trails landing page" />
         </a>
       </div>
-      <br/>
-      <br/>
+      <br></br>
+      <br></br>
 
       <hr></hr>
       <br></br>

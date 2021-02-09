@@ -4,7 +4,7 @@ import React from "react";
 
 function Wrapper(props) {
     return (
-        <div className="hero"  {...props}>
+        <div className="container hero"  {...props}>
             
         </div>
     )

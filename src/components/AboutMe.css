@@ -1,0 +1,19 @@
+.me {
+    margin-bottom: 20px;
+}
+.welcome {
+    /* display: flex; */
+}
+.intro {
+    text-align: center;
+    margin-bottom: 25px;
+}
+.hello {
+    font-size: 30px;
+}
+.magic {
+    font-size: 15px;
+}
+.p1 {
+    display: flex;
+}

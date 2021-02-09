@@ -6,16 +6,15 @@ import me from "../images/Merlin.png"
 function AboutMe() {
     return (
         <div className="hero-body">
-            
-            <img src={me} className="logo" />
-            
-            <h1>
-                Hello, my name is Merlin. 
-            </h1>
-
-            <h4>No, I'm not a magician</h4>
-
-            <p>
+            <div className="welcome">
+                
+                <div className="intro">
+                    <img src={me} className="me" />
+                    <h1 className="hello">Hello, my name is Merlin. </h1>
+                    <h4 className="magic">No, I'm not a magician</h4>
+                </div>
+            </div>
+            <p className ="p1">
                 I am an aspiring 'Full Stack Web Developer'. 
                 I have a very curios mind which means when something is thrown at me that I do not understand, 
                 I WILL understand it in detail someday (sooner than later).
@@ -33,6 +32,8 @@ function AboutMe() {
                 started wondering again, hence the reason I now sit behind my computer muttering things like, "my code 
                 looks right, why isn't it working..?" or "I don't understand why it works, but hey, I'll take it!"
             </p>
+
+            <br></br>
 
             <p>
                 My full stack journey has been fun and challenging. I graduated from Penn LPS Coding Bootcamp on 
