@@ -5,8 +5,9 @@ import Footer from "./components/Footer";
 // import Body from "./components/Body";
 import Wrapper from "./components/Wrapper";
 import AboutMe from "./components/AboutMe";
-import Portfolio from "./components/AboutMe";
-import Contact from "./components/AboutMe";
+import Portfolio from "./components/Portfolio";
+import Contact from "./components/ContactMe";
+import Resume from "./components/Resume";
 
 import {
   BrowserRouter as Router,
@@ -28,8 +29,11 @@ function App() {
           <Route exact path="/portfolio" component={Portfolio}>
             <Portfolio />
           </Route>
-          <Route exact path="/contact">
+          <Route exact path="/contact" component={Contact}>
             <Contact />
+          </Route>
+          <Route exact path="/resume" component={Resume}>
+            <Resume />
           </Route>
         </Switch>
       <Footer />

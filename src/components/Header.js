@@ -19,7 +19,7 @@ function Header() {
 <div className="hero-head">
   <nav className="navbar" role="navigation" aria-label="main navigation">
     <div className="navbar-brand">
-      <Link className="navbar-item" href="https://bulma.io">
+      <Link to="/about" className="navbar-item">
         <h1>Merlin Rock</h1>
       </Link>
 
@@ -32,19 +32,19 @@ function Header() {
 
     <div id="navbarBasicExample" className="navbar-menu">
       <div className="navbar-start">
-        <Link className="navbar-item">
+        <Link to="/about" className="navbar-item">
           About
         </Link>
 
-        <Link className="navbar-item">
+        <Link to="/portfolio" className="navbar-item">
           Portfolio
         </Link>
 
-        <Link className="navbar-item">
+        <Link to="/contact" className="navbar-item">
           Contact
         </Link>
 
-        <Link className="navbar-item">
+        <Link to="/resume"className="navbar-item">
           Resume
         </Link>
       </div>
