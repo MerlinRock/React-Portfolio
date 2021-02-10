@@ -1,26 +1,14 @@
 import React from "react";
 import './Header.css';
-import { Section } from 'react-bulma-components';
-import { Link, useLocation } from "react-router-dom";
-
-
-// const styles = {
-//     hr: {
-//         margin: 0,
-//         background: "red",
-//         height: "4px"
-//     }
-// }
-
+import { Link } from "react-router-dom";
 
 function Header() {
-  const location = useLocation()
   return (
 <div className="hero-head">
   <nav className="navbar" role="navigation" aria-label="main navigation">
     <div className="navbar-brand">
       <Link to="/about" className="navbar-item">
-        <h1>Merlin Rock</h1>
+        <h1 className=" has-text-grey-lighter">Merlin Rock</h1>
       </Link>
 
       <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -32,19 +20,19 @@ function Header() {
 
     <div id="navbarBasicExample" className="navbar-menu ">
       <div className="navbar-start">
-        <Link to="/about" className="navbar-item">
+        <Link to="/about" className="navbar-item has-text-grey-light">
           About
         </Link>
 
-        <Link to="/portfolio" className="navbar-item">
+        <Link to="/portfolio" className="navbar-item has-text-grey-light">
           Portfolio
         </Link>
 
-        <Link to="/contact" className="navbar-item">
+        <Link to="/contact" className="navbar-item has-text-grey-light">
           Contact
         </Link>
 
-        <Link to="/resume"className="navbar-item">
+        <Link to="/resume"className="navbar-item has-text-grey-light">
           Resume
         </Link>
       </div>

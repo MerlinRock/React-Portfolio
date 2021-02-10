@@ -4,7 +4,7 @@ import React from "react";
 
 function Wrapper(props) {
     return (
-        <div className="container hero"  {...props}>
+        <div className="container hero has-background-black-ter has-text-grey-light"  {...props}>
             
         </div>
     )
